@@ -1,0 +1,46 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+    // border: 1px solid #000;
+    section {
+        width: 70%;
+        height: 100%;
+        h1 {
+            margin: 2rem;
+        }
+        #image {
+            display: block;
+            margin: auto auto 2rem auto;
+            animation: rotation 0.5s infinite linear;
+        }
+        p {
+            margin: 0rem 3rem 2rem 3rem;
+        }
+        #project_section {
+            display: flex; 
+            justify-content: space-around;
+            width: 100%;
+        }
+        h3 {
+            display: block;
+            margin: 2rem;
+        }
+    }
+    aside {
+        width: 30%;
+        height: 100%;
+    }
+}
