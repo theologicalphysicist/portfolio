@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.scss'
 //_ COMPONENTS
 import Project from '../../components/project';
 import SourceList from '../../components/sourceList';
+import Logo from '../../components/logo';
 
 
 export default function Home() {
@@ -18,9 +19,9 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main id={styles.main}>
+                <Logo />
                 <section id={styles.section}>
                     <h1>Coming soon...</h1>
-                    <Image id={styles.image} width={48} height={48} src="/favicon-32x32.png" alt="therefore Logo" />
                     <p>
                         The portfolio site is on hold as I am currently occupied with some other projects, namely:
                     </p>
@@ -36,7 +37,6 @@ export default function Home() {
                                 site: "http://mhtrackerunstable.gatsbyjs.io"    
                             }} 
                         />
-
                     </div>
                     <h3>
                         Check them out!
